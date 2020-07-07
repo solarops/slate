@@ -312,6 +312,9 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
+            <a href="#json-requests" class="toc-h1 toc-link" data-title="JSON Requests">JSON Requests</a>
+          </li>
+          <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
           </li>
           <li>
@@ -346,7 +349,37 @@
 <p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
 
 <p>This example API documentation page was created with <a href="https://github.com/slatedocs/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
+
+<p>Test paragraph here</p>
+<h1 id='json-requests'>JSON Requests</h1>
+<p>myPV offers a simple JSON API for retrieving plant configuration and performane data. </p>
+
+<blockquote>
+<p>Data sent in request:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"facility"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WAD1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"config"</span><span class="p">:</span><span class="w"> </span><span class="s2">"site_devices"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response from server:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"Energy_Meter"</span><span class="p">:[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"daq_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DEV_41"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"sos_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EMTR"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"Inverter"</span><span class="p">:[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"daq_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DEV_42"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"sos_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Inverter 1"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h1 id='authentication'>Authentication</h1>
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
