@@ -27,6 +27,42 @@ We have language bindings in Shell, Ruby, Python, and JavaScript! You can view c
 
 This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
+Test paragraph here
+
+
+# JSON Requests
+
+myPV offers a simple JSON API for retrieving plant configuration and performane data. 
+
+> Data sent in request:
+
+```json
+{
+  "facility": "WAD1",
+  "config": "site_devices"
+}
+```
+
+> Response from server:
+
+```json
+{
+  "Energy_Meter":[
+    {
+      "daq_name": "DEV_41",
+      "sos_name": "EMTR"
+    }
+  ],
+  "Inverter":[
+    {
+      "daq_name": "DEV_42",
+      "sos_name": "Inverter 1"
+    }
+  ]
+}
+```
+
+
 # Authentication
 
 > To authorize, use this code:
